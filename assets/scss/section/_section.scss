@@ -1,0 +1,139 @@
+.Nav_wrap_w {
+    width: 100%;
+    min-width: 1680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 70px;
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+
+    >a {
+        img {
+            width: 403px;
+        }
+    }
+
+    >div {
+        a {
+            font-size: 20px;
+            color: var(--white);
+            line-height: 150%;
+            font-weight: 700;
+            margin-right: 45px;
+        }
+    }
+}
+
+.Nav_wrap_m {
+    position: fixed;
+    padding: 0 25px;
+    top: 70px;
+    width: 100%;
+    background-color: var(--black);
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+        color: var(--white);
+
+        strong {
+            color: var(--pur01);
+        }
+    }
+
+    .nav_off {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a>img {
+            width: 200px;
+        }
+
+        button>img {
+            width: 16px;
+        }
+    }
+
+}
+
+.Nav_on {
+    background: #ADB4E28C;
+    top: 0;
+    height: 360px;
+    padding: 70px 25px 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    .nav_off {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+            font-size: 14px;
+            font-weight: 700;
+            color: #F2F2F2;
+        }
+
+        a:hover {
+            color: var(--pur01);
+            transition: all 0.3s;
+        }
+    }
+}
+
+.Footer_wrap {
+    width: 100%;
+    height: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+            color: var(--white);
+            margin-bottom: 30px;
+
+            strong {
+                color: var(--pur01);
+            }
+        }
+
+        .img_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 154px;
+            margin-bottom: 40px;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+            color: var(--gray03);
+            font-weight: 600;
+        }
+    }
+}
