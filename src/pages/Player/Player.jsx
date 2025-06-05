@@ -19,15 +19,15 @@ const Player = () => {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZmE5ZTkzNTEzMjQ4MmM3ODdjMGJkNjdkNDQ3ZjRjOCIsIm5iZiI6MTc0NzY1NzUzMS4xNDgsInN1YiI6IjY4MmIyMzNiZmM0ZmM5YzZmZDViNWJjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3S1lS9GA7S8j5YW9XeP-KyzoIvb7jaCzIovFsswKJt4'
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNmMyZjdlZTMxNTEyMzNkOTFmMWY3ZGU4MGNhZmFiOCIsIm5iZiI6MTc0OTA4MzYzMy4yNzEwMDAxLCJzdWIiOiI2ODQwZTVmMWIyOTBkNWQyYzAyODllZTkiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.MoF2M50lniXe6Cu4Uk0FMMSb7Q8xJt4AW7Wds5nDbPY'
         }
     };
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options)
-            .then(response => response.json())
-            .then(response => setApiData(response.results[0]))
-            .catch(err => console.error(err));
+        fetch('https://api.themoviedb.org/3/movie/552524/videos?language=en-US', options)
+        .then(response => res.json())
+        .then(response => setApiData(response.results[0]))
+        .catch(err => console.error(err));
     }, [])
 
     return (
